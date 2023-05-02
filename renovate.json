@@ -17,7 +17,7 @@
     {
       "fileMatch": ["^helm\\/.+\\/values\\.yaml$"],
       "matchStringsStrategy": "recursive",
-      "matchStrings": ["chartName: (?<depName>.*)\n.*version: (?<currentValue>.*?)\n"],
+      "matchStrings": ["chartName: (?<depName>.*)\n\\s*catalog: .*\n\\s*enabled: .*\n\\s*namespace: .*\n\\s*version: (?<currentValue>.*?)\n"],
       "packageNameTemplate": "giantswarm/{{{depName}}}-app",
       "datasourceTemplate": "github-releases",
       "extractVersionTemplate": "^v(?<version>.*)$"
