@@ -4,13 +4,19 @@
   ],
   "labels": ["dependencies", "renovate"],
   "dependencyDashboard": true,
-  "ignorePaths": [
-    ".github/workflows/zz_generated.*"
+  "includePaths": [
+    "helm/.*"
   ],
   "ignoreDeps": [
     "architect",
     "zricethezav/gitleaks-action",
     "actions/setup-go"
+  ],
+  "packageRules": [
+      {
+        "matchPackagePatterns": ["^giantswarm"],
+        "excludePackageNames": ["giantswarm/trivy-operator", "giantswarm/kyverno", "giantswarm/falco", "giantswarm/jiralert", "giantswarm/trivy", "giantswarm/starboard-exporter-app", "kyverno-policies-app"]
+      }
   ],
   "regexManagers": [
     {
