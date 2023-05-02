@@ -14,8 +14,7 @@
   ],
   "packageRules": [
       {
-        "matchPackagePatterns": ["^giantswarm/"],
-        "excludePackagePatterns": ["trivy-operator$", "kyverno$", "falco$", "jiralert$", "trivy$", "starboard-exporter-app$", "kyverno-policies-app$"],
+        "matchPackagePatterns": ["trivy-operator$", "kyverno$", "falco$", "jiralert$", "trivy$", "starboard-exporter-app$", "kyverno-policies-app$"],
         "enabled": false
       }
   ],
