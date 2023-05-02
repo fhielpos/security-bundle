@@ -16,6 +16,7 @@
   "regexManagers": [
     {
       "fileMatch": ["^helm\\/.+\\/values\\.yaml$"],
+      "matchStringsStrategy": "recursive",
       "matchStrings": ["chartName: (?<depName>.*)\n.*version: (?<currentValue>.*?)\n"],
       "packageNameTemplate": "giantswarm/{{{depName}}}-app",
       "datasourceTemplate": "github-releases",
