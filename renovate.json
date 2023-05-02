@@ -16,7 +16,7 @@
   "packageRules": [
       {
         "matchPackagePatterns": ["trivy-operator$", "kyverno$", "falco$", "jiralert$", "trivy$"],
-        "enabled": true
+        "enabled": false
       }
   ],
   "regexManagers": [
