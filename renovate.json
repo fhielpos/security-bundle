@@ -4,8 +4,8 @@
   ],
   "labels": ["dependencies", "renovate"],
   "dependencyDashboard": true,
-  "includePaths": [
-    "helm/security-bundle/.*"
+  "ignoredPaths": [
+    ".github/.*"
   ],
   "ignoreDeps": [
     "architect",
