@@ -18,7 +18,6 @@
       "fileMatch": ["^helm\\/.+\\/values\\.yaml$"],
       "matchStrings": ["chartName: (?<depName>.*)\n.*\\s*version: (?<currentValue>.*?)\n"],
       "datasourceTemplate": "github-releases",
-      "depNameTemplate": "giantswarm/{{{depName}}-app",
       "extractVersionTemplate": "^v(?<version>.*)$"
     }
   ],
