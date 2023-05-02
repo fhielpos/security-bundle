@@ -15,7 +15,11 @@
   ],
   "packageRules": [
       {
-        "matchPackagePatterns": ["trivy-operator$", "kyverno$", "falco$", "jiralert$", "trivy$", "starboard-exporter-app$", "kyverno-policies-app$"],
+        "matchPackagePatterns": ["trivy-operator$", "kyverno$", "falco$", "jiralert$", "trivy$"],
+        "enabled": false
+      },
+      {
+        "matchPackageNames": ["giantswarm/starboard-exporter-app", "giantswarm/kyverno-policies-app"],
         "enabled": false
       }
   ],
