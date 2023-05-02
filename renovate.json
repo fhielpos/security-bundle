@@ -5,7 +5,7 @@
   "labels": ["dependencies", "renovate"],
   "dependencyDashboard": true,
   "ignorePaths": [
-    ".github/.*"
+    ".github/**"
   ],
   "ignoreDeps": [
     "architect",
