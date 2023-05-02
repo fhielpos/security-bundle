@@ -71,7 +71,7 @@ apps:
   trivyOperator:
     appName: trivy-operator
     chartName: trivy-operator
-    version: 0.3.7
     catalog: giantswarm
     enabled: true
     namespace: security-bundle
+    version: 0.3.7
