@@ -14,8 +14,8 @@
   ],
   "packageRules": [
       {
-        "matchPackagePatterns": ["^giantswarm"],
-        "excludePackageNames": ["giantswarm/trivy-operator", "giantswarm/kyverno", "giantswarm/falco", "giantswarm/jiralert", "giantswarm/trivy", "giantswarm/starboard-exporter-app", "kyverno-policies-app"]
+        "matchPackagePatterns": ["^giantswarm/"],
+        "excludePackagePatterns": ["trivy-operator$", "kyverno$", "falco$", "jiralert$", "trivy$", "starboard-exporter-app$", "kyverno-policies-app$"]
       }
   ],
   "regexManagers": [
